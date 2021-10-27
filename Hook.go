@@ -15,7 +15,7 @@ func Parse (w http.ResponseWriter, req *http.Request) {
         subject := req.FormValue("subject")
         body:= req.FormValue("text")
 
-        //Get Uploaded File
+        //Get Uploaded 
         file, handler, err := req.FormFile("attachment1")
         if err != nil {
                 fmt.Println(err)
